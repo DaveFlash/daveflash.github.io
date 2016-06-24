@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.eot'); /* IE9 Compat Modes */
+  src: url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('http://fonts.ddw.nu/ddmtxt/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'); /* Legacy iOS */
+}
+/* branding */
+/* branding */
+aside.corp {
+	border: 1px solid #222;
+    border-radius: 4px;
+	font-family: 'Myriad Pro Regular';
+	width: 270px;
+	height: 45px;
+	position: absolute;
+	left: 0px;
+	bottom: 17.5px;
+}
+.corpttl,
+.corpttl a{
+	color: #000;
+	font-size: 25px;
+	margin: 0;
+	text-decoration: none;
+}
+.corptag,
+.corptag a{
+	color: #000;
+	font-size: 13px;
+	margin: 0;
+	margin-left: 5px;
+	text-decoration: none;
+}
+.corpttl a:hover {
+	color: #F88C00!important;
+	text-decoration: underline;
+}
+.corpttl, .corptag { padding-left: 55px }
+.corpttl::before { 
+	content: "";
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: url(http://img.ddw.nu/dfdesign512-150x150.png) no-repeat;
+	background-size: 45px 45px;
+	border-radius: 3px 0px 0px 3px;
+	margin-left: -55px;
+	margin-top: -2px;
+	vertical-align: text-top;
+}
+.corptag { margin-top: -16px; margin-left: -4px; }
+.corpsup { position: relative; top: 0.15em; left: 0em; font-size: 40% }
+/* Global */
+/* ----------------------------------------------------- */
+
+body {
+	background: #f2f2f2;
+}
+
+/* Header & navigation */
+/* ----------------------------------------------------- */
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+
+header {
+	position: relative;
+	padding-left: 65px;
+	margin-left: 60px;
+	height: 75px;
+	width: auto;
+	border-bottom: 2px solid #e6e6e6;
+	
+}
+header nav {
+	position: absolute;
+	left: 250px;
+	bottom: 25px;
+}
+header nav a {
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+	width: auto;
+}
+nav ul { 
+    list-style: none;
+}
+nav ul li { display: inline;  }
+nav ul li a {
+	display: block;
+	float: left;
+	font-size: 25px;
+	margin: 0px 15px -15px 15px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0);
+}
+nav ul li a:hover {
+	color: #F88C00;
+	border-bottom: 2px solid #F88C00;
+}/*	
+nav ul li a.active {
+	color: #F88C00;
+	border-bottom: 2px solid #F88C00;
+}*/
+nav ul li a:active, nav ul li a.current {
+	color: #F88C00;
+	border-bottom: 2px solid #F88C00;
+}
+
+/* main content */
+#content {
+	margin: 25px 0 0 60px;
+	width: 800px;
+	opacity: 1;
+	overflow: hidden;
+}
+
+#content a {
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+#content p {
+	margin-bottom: 10px;
+}
+
+#content section {
+	padding-top: 25px;
+	clear: both;
+}
+
+#content section aside {
+	margin-top: 1px;
+	width: 200px;
+	float: left;
+}
+
+#content section aside,
+#content section aside h3 {
+	font-size: 13px;
+}
+
+#content section article {
+	width: 450px;
+	margin: 0 100px 25px 0;
+	float: right;
+}
+
+
+a:hover,
+nav a.active {
+	color: #ed5e3b;
+}
+
+
+
+
+footer {
+	clear: both;
+	padding: 50px 0 100px 310px;
+	color: #c2c2c2;
+	font-size: 13px;
+	width: 400px;
+}
+footer a {
+	color: inherit;
+}
+
+/* Content */
+/* ----------------------------------------------------- */
+/*
+section a {
+	font-weight: bold;
+	text-decoration: none;
+	color: inherit;
+}
+
+h2 {
+	font-size: 18px;
+	margin: -1px 0 1px 0;
+}
+/*
+section p, article p {
+	margin-bottom: 10px;
+}*/
+
+article.gallery ul,
+article.gallery-big ul {
+	list-style: none;
+	width: 550px;
+}
+
+article.gallery li img {
+	float: left;
+	margin: 0 10px 10px 0;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.20);
+	width: 90px;
+	height: 90px;
+}
+
+article.gallery-big li img {
+	clear: both;
+	float: left;
+	margin: 10px 0 10px 0;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.20);
+}
+
+article.gallery li a:hover img,
+article.gallery-big li a:hover img {
+	opacity: 0.75;
+}
+
+article.gallery li span,
+article.gallery-big li span {
+	display: none;
+}
